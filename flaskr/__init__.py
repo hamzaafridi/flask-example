@@ -28,7 +28,7 @@ def create_app(test_config=None):
     def hello():
         return "Hello World!"
     
-    #a simple Hello World page for flask
+    #this is just to test
     @app.route('/hamza')
     def hamza():
         return "Hello Hamza Work Harder"
