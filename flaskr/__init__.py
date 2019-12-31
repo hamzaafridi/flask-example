@@ -1,6 +1,7 @@
 import os
 
 from flask import Flask
+from . import db
 
 def create_app(test_config=None):
     #create and configure app
@@ -33,6 +34,8 @@ def create_app(test_config=None):
     def hamza():
         return "Hello Hamza Work Harder"
     
+    
+    db.init_app(app)
     return app
 
             
